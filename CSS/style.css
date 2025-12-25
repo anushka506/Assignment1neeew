@@ -1,0 +1,72 @@
+header {
+  background-color: #004080; /* Navy blue background */
+  color: rgb(254, 246, 246); /* White text for contrast */
+  text-align: center; /* Center align the header text */
+  padding: 1rem; /* Space inside header */
+}
+
+/* ===== NAVIGATION LINKS ===== */
+nav a {
+  color: white; /* White text colour */
+  margin: 0 1rem; /* Spacing between links */
+  font-weight: bold; /* Make links bold */
+  text-decoration: none; /* Remove default underline */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Add underline on hover for feedback */
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.about-container {
+  padding: 2rem; /* Space around main content */
+  max-width: 1000px; /* Limit content width for readability */
+  margin: auto; /* Center the content horizontally */
+}
+
+/* Flexbox used to align image and text */
+.profile-section {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /*  items vertically on small screens */
+  align-items: center; /* Center align horizontally */
+  text-align: center; /* Center text */
+  gap: 1.5rem; /* Space between image and text */
+  
+}
+
+/* Profile image styling */
+.profile-pic {
+  box-sizing: border-box;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* Make it circular */
+  border: 4px solid #004080; /* Add border  */
+  object-fit: cover; /* Ensure image is not deform*/
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #004080; /* Same as header for consistency */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem; /* Add space above footer */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* For tablet screens (between 768px and 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .profile-section {
+    flex-direction: row; /* Side-by-side layout on tablets */
+    text-align: left; /* Align text left */
+  }
+}
+
+/* For large screens (above 1024px) */
+@media (min-width: 1024px) {
+  .profile-section {
+    flex-direction: row; /* Horizontal layout */
+    justify-content: center; /* Center the group in the page */
+  }
+}

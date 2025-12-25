@@ -1,0 +1,73 @@
+header {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ===== NAVIGATION LINKS ===== */
+nav a {
+  color: white;
+  margin: 0 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Hover feedback */
+}
+
+/* ===== CV CONTAINER ===== */
+.cv-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ===== GRID LAYOUT ===== */
+/* Grid used to structure CV content responsively */
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* One column on mobile */
+  gap: 2rem; /* Space between sections */
+}
+
+/* Each section styling */
+.cv-section h2 {
+  color: #041c30; /* Themed heading color */
+  margin-bottom: 0.5rem;
+}
+
+.cv-section ul {
+  list-style-type: disc; /* Use  points */
+  padding-left: 1.5rem; /* a line of list items */
+}
+
+.cv-section li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Medium screens (tablets): 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cv-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens (desktop): 3 columns */
+@media (min-width: 1024px) {
+  .cv-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
